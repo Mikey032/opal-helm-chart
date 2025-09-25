@@ -149,7 +149,7 @@
     },
     "server": {
       "type": ["null", "object"], "additionalProperties": false, "title": "opal server settings",
-      "required": ["port", "policyRepoUrl", "pollingInterval", "dataConfigSources", "broadcastPgsql", "uvicornWorkers", "replicas"],
+      "required": ["port", "pollingInterval", "dataConfigSources", "broadcastPgsql", "uvicornWorkers", "replicas"],
       "properties": {
         "securityContext": { "$ref": "#/definitions/SecurityContext" },
         "containerSecurityContext": { "$ref": "#/definitions/ContainerSecurityContext" },
