@@ -122,8 +122,10 @@ spec:
               containerPort: {{ .Values.server.port }}
               protocol: TCP
           env:
+            {{- if .Values.server.policyRepoUrl }}
             - name: OPAL_POLICY_REPO_URL
               value: {{ .Values.server.policyRepoUrl | quote }}
+            {{- end }}
             - name: OPAL_POLICY_REPO_POLLING_INTERVAL
               value: {{ .Values.server.pollingInterval | quote }}
             {{- if .Values.server.policyRepoClonePath }}

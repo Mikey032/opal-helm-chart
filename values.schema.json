@@ -160,8 +160,7 @@
           "type": "integer", "title": "server listening port", "default": 7002
         },
         "policyRepoUrl": {
-          "type": "string", "title": "policy repo url",
-          "default":"https://github.com/permitio/opal-example-policy-repo"
+          "type": ["null", "string"], "title": "policy repo url","default": null
         },
         "policyRepoSshKey": {
           "type": ["null", "string"], "title": "policy SSH key","default": null
