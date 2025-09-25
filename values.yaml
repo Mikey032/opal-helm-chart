@@ -54,6 +54,9 @@ server:
   }
   securityContext: {}
   containerSecurityContext: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
 
 client:
   port: 7000
@@ -64,10 +67,16 @@ client:
   extraEnv: {}
   securityContext: {}
   containerSecurityContext: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
 
 postgresql:
   securityContext: {}
   containerSecurityContext: {}
   extraEnv: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
 
 broadcastReplicas: 1

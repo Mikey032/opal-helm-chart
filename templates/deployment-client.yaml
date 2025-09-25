@@ -29,6 +29,18 @@ spec:
         {{- toYaml .Values.openshift.securityContext | nindent 8 }}
         {{- end }}
       {{- end }}
+      {{- with .Values.client.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.client.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.client.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       {{- if .Values.client.opaStartupData }}
       volumes:
         - name: opa-startup-data

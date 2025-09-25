@@ -205,6 +205,22 @@
           "title": "resources",
           "default": null
         },
+        "nodeSelector": {
+          "type": "object",
+          "title": "node selector",
+          "default": null
+        },
+        "tolerations": {
+          "type": "array",
+          "title": "tolerations",
+          "default": null,
+          "items": { "type": "object" }
+        },
+        "affinity": {
+          "type": "object",
+          "title": "affinity",
+          "default": null
+        },
         "imagePullPolicy": {
           "type": "string",
           "default": "IfNotPresent",
@@ -251,6 +267,22 @@
           "title": "resources",
           "default": null
         },
+        "nodeSelector": {
+          "type": "object",
+          "title": "node selector",
+          "default": null
+        },
+        "tolerations": {
+          "type": "array",
+          "title": "tolerations",
+          "default": null,
+          "items": { "type": "object" }
+        },
+        "affinity": {
+          "type": "object",
+          "title": "affinity",
+          "default": null
+        },
         "imagePullPolicy": {
           "type": "string",
           "default": "IfNotPresent",
@@ -269,6 +301,22 @@
           "type": "object",
           "title": "extra environment variables list",
           "default": {}
+        },
+        "nodeSelector": {
+          "type": "object",
+          "title": "node selector",
+          "default": null
+        },
+        "tolerations": {
+          "type": "array",
+          "title": "tolerations",
+          "default": null,
+          "items": { "type": "object" }
+        },
+        "affinity": {
+          "type": "object",
+          "title": "affinity",
+          "default": null
         }
       }
     }
